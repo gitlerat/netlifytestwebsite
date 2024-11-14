@@ -1,0 +1,10 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Paul Höller -- https://hoeller.digital/
+
+# TECHNOLOGY COLOPHON
+
+    Jekyll, HTML, CSS (SCSS)
