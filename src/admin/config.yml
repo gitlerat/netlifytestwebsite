@@ -1,9 +1,13 @@
-backend:
-    name: git-gateway
-    branch: master
 
-local_backend: true
-# change url to a link to the image you want to use, no file paths, must be a URL
+backend:
+    name: github
+    repo: gitlerat/netlifytestwebsite  # Your GitHub repository in the format 'owner/repo'
+    branch: master  # or 'main' if that's your default branch
+
+# Remove local_backend if you don't need it
+# local_backend: true
+
+# Change URL to a link to the image you want to use, no file paths, must be a URL
 logo_url: https://codestitch.app/frontend/images/logo.png
 
 media_folder: "src/assets/images/blog"
