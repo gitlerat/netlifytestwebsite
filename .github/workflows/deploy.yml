@@ -4,7 +4,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - master  # Change this to your default branch
+      - master  # Adjust to your branch name
 
 jobs:
   build:
@@ -12,21 +12,32 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          node-version: '14'  # Specify your Node.js version
+          node-version: '14'
 
       - name: Install dependencies
         run: npm install
 
       - name: Build the site
-        run: npx eleventy --output public
+        run: npx eleventy
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Upload artifact for deployment
+        uses: actions/upload-pages-artifact@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}  # This is safe to use
-          publish_dir: ./public
+          path: public  # This is your Eleventy output directory
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v2
+
