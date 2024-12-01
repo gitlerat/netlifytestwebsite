@@ -10,11 +10,15 @@
 
 </head>
 <body>
-     <script>
-        // Initialize Decap CMS
-        DecapCMS.init({
-config: '/netlifytestwebsite/admin/config.yml'  // Path to your configuration file
+   <script>
+        // Wait for the DOM to be ready before initializing Decap CMS
+        document.addEventListener('DOMContentLoaded', function () {
+            // Initialize Decap CMS once the DOM is fully loaded
+            DecapCMS.init({
+                config: '/netlifytestwebsite/admin/config.yml'  // Path to your configuration file
+            });
         });
-    </script></body>
+    </script>
+</body>
 </html>
 
