@@ -7,15 +7,15 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Meta description for the page">
+        <meta name="description" content="asdasdasdasd">
         <meta name="keywords" content="">
-        <link rel="canonical" href="https://www.example.com/project-two/">
+        <link rel="canonical" href="https://www.example.com/blog/mein-post/">
 
         <!--Social Media Display-->
-        <meta property="og:title" content="Project Two | Code Stitch Web Designs"/>
-        <meta property="og:description" content="Meta description for the page"/>
+        <meta property="og:title" content="mein blogpost"/>
+        <meta property="og:description" content="asdasdasdasd"/>
         <meta property="og:type" content="website"/>
-        <meta property="og:url" content="https://www.example.com/project-two/"/>
+        <meta property="og:url" content="https://www.example.com/blog/mein-post/"/>
         <meta property="og:image" content="/assets/images/logo-small.png"/>
         <meta property="og:image:secure_url" content="/assets/images/logo-small.png"/>
 
@@ -34,7 +34,7 @@
 
         <!-- Preload an image - tag not rendered if preloadImg is blank to stop console errors -->
         
-            <link rel="preload" as="image" href="/assets/images/cabinets2.jpg"/>
+            <link rel="preload" as="image" href="/assets/images/blog/landing.jpg"/>
         
 
         <!-- Sitewide Stylesheets and Scripts -->
@@ -44,10 +44,39 @@
         <script defer src="/assets/js/nav.js"></script>
 
         
-    <link rel="stylesheet" href="/assets/css/projects.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "mein blogpost",
+            
+                "image": ["/assets/images/blog/landing.jpg"],
+            
+            "datePublished": "Nov 14, 2024",
+            
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Code Stitch Web Designs"
+                },
+            
+            
+                "author": [
+                    {
+                        "@type": "Person",
+                        "name": "Hans"
+                    }
+                ],
+            
+            "articleBody": "asdasdasdasd",
+            "url": "https://www.example.com/blog/mein-post/",
+            "articleSection": "sitemap,post,post"
+        }
+    </script>
 
 
-        <title>Project Two | Code Stitch Web Designs</title>
+        <title>mein blogpost</title>
     </head>
     <body>
         <!--Screen reader skip main nav-->
@@ -144,13 +173,11 @@
                                     
                                 
                                     
-                                        
-                                    
                                 
 
                                 
                                 <button 
-                                    class="cs-li-link cs-dropdown-button cs-active"
+                                    class="cs-li-link cs-dropdown-button "
                                     aria-expanded="false"
                                     aria-controls="dropdown-Projects"
                                     aria-label="dropdown-Projects"
@@ -252,13 +279,11 @@
 </header>
         <main id="main">
             
-
     <!-- ============================================ -->
     <!--                    LANDING                   -->
     <!-- ============================================ -->
 
     <section id="int-hero">
-        <h1 id="home-h">Project Two Gallery</h1>
         <picture>
             <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
             <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
@@ -267,99 +292,73 @@
     </section>
 
     <!-- ============================================ -->
-    <!--                   Gallery                    -->
+    <!--              Main Blog Content               -->
     <!-- ============================================ -->
 
-    <section id="gallery">
-        <div class="cs-container">
-            <div class="cs-image-group">
-                <!-- Row 1-->
-                <div class="cs-row cs-row-1">
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port1-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port1.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port1.jpg" alt="new hallway" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port4-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port4.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port4.jpg" alt="new home construction" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port7-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port7.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port7.jpg" alt="building a new wall" loading="lazy" width="400" height="560">
-                    </picture>
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                </div>
-                <!-- Row 2 -->
-                <div class="cs-row cs-row-2">
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port2-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port2.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port2.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port5-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port5.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port5.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port8-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port8.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port8.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
-                    </picture>
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                </div>
-                <!-- Row 3 -->
-                <div class="cs-row cs-row-3">
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port3-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port3.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port3.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port6-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port6.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port6.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port9-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port9.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port9.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
-                    </picture>
+    <div class="blog-container main-content-wrapper">
+        <!--Main content -->
+        <div class="main-content">
+            <!-- ============================================ -->
+            <!--                  Blog Article                -->
+            <!-- ============================================ -->
 
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+            <article class="blog-article">
+                <!--Main Article Image-->
+                <picture class="blog-mainImage">
+                    <img src="/assets/images/blog/landing.jpg" alt="Kitchen" width="795" height="400" decoding="async"/>
+                </picture>
+
+                <!--Article Info-->
+                <div class="article-group">
+                    <h1 class="blog-h1">mein blogpost</h1>
+                    <div class="blog-authorGroup">
+                        <!--Author Image-->
+                        <picture class="blog-author-img">
+                            <img
+                            src="/assets/svgs/profile.svg"
+                            alt="house"
+                            width="32"
+                            height="32"
+                            decoding="async">
+                        </picture>
+                        <span class="blog-author">Hans</span>
+                        <span aria-hidden="true" class="blog-dot"></span>
+                        <!--Blog Date-->
+                        <span class="blog-date">Nov 14, 2024</span>
+                    </div>
                 </div>
-            </div>
-            <a href="/contact" class="cs-button-solid">Get Free Quote</a>
+                <section id="blog-content">
+                    <p>Hi das ist ein Test!!!!!!!!!</p>
+
+                </section>
+            </article>
         </div>
-    </section>
+        <!-- End .main-content -->
 
-    <!-- ============================================ -->
-<!--             Final Call to Action             -->
+        <!-- ============================================ -->
+<!--                Featured Posts                -->
 <!-- ============================================ -->
 
-<section id="cta">
-    <div class="container">
-        <h2 class="title">
-            Get It Done
-            <br/>
-            With Us Today
-        </h2>
-        <p>
-            Say something catchy, informative, and encouraging to click the button to go to the contact page. I like to add these to the bottom of all pages.
-        </p>
-        <a href="/contact" class="cs-button-solid">Get an Estimate Now</a>
+<div class="blog-sidebar">
+    <!--Featured-->
+    <div class="blog-featured-group">
+        <span class="blog-header">Featured Posts</span><a class="blog-feature" href="/blog/canitiem-saxa/">
+                <picture class="blog-featureImage">
+                    <img
+                        src="/assets/images/blog/landing.jpg" 
+                        alt="Kitchen"
+                        width="60"
+                        height="60"
+                        decoding="async">
+                </picture>
+                <div class="content-group">
+                    <h3 class="feature-h3">Canitiem Saxa</h3>
+                    <span class="feature-date">Jun 8, 2023</span>
+                </div>
+            </a></div>
+    <!--Add anything else in the sidebar below-->
+</div>
     </div>
-    <picture>
-        <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-        <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-        <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="lazy" width="2500" height="1667">
-    </picture>
-
-</section>
-
 
         </main>
         <!-- ============================================ -->
