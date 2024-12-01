@@ -10,12 +10,12 @@
 </head>
 <body>
       <script>
-        // Wait until the DOM is fully loaded before initializing Decap CMS
-        document.addEventListener('DOMContentLoaded', function () {
+        // Ensure Decap CMS initializes after the DOM has fully loaded
+        window.onload = function() {
             DecapCMS.init({
                 config: '/admin/config.yml' // Ensure it points to the correct path
             });
-        });
+        }
     </script>
 </body>
 </html>
