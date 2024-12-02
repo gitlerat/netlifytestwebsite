@@ -26,7 +26,7 @@ jobs:
         run: npx eleventy
 
       - name: Upload artifact for deployment
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v1  # No v4 for this action
         with:
           path: public  # This is your Eleventy output directory
 
